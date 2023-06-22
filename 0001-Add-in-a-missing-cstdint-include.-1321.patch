@@ -1,0 +1,25 @@
+From e1462437c77c7193341b51e23aceaff47989240b Mon Sep 17 00:00:00 2001
+From: Chris Lalancette <clalancette@gmail.com>
+Date: Thu, 4 May 2023 13:54:45 -0400
+Subject: [PATCH] Add in a missing cstdint include. (#1321)
+
+Signed-off-by: Chris Lalancette <clalancette@gmail.com>
+---
+ include/rosbag2_compression/compression_options.hpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/include/rosbag2_compression/compression_options.hpp b/include/rosbag2_compression/compression_options.hpp
+index 37fe5007e34c..3028f2a49d79 100644
+--- a/include/rosbag2_compression/compression_options.hpp
++++ b/include/rosbag2_compression/compression_options.hpp
+@@ -15,6 +15,7 @@
+ #ifndef ROSBAG2_COMPRESSION__COMPRESSION_OPTIONS_HPP_
+ #define ROSBAG2_COMPRESSION__COMPRESSION_OPTIONS_HPP_
+ 
++#include <cstdint>
+ #include <string>
+ 
+ #include "visibility_control.hpp"
+-- 
+2.41.0
+
